@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+msg: "Welcome to FinSecure Account Service"
+
+# Common Eureka config (ab har service mein alag se nahi likhna!)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh
