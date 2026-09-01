@@ -1,9 +1,9 @@
 server:
   port: 9000
 
-# ⭐ Hardcoded token ab config se aayega!
+
 gateway:
-  secret-token: finsecure@123
+  secret-token:  ${GATEWAY_SECRET_TOKEN}
 
 eureka:
   client:
