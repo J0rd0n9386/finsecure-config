@@ -1,3 +1,9 @@
+spring:
+  boot:
+    admin:    #admin panel
+      client:
+        url: http://localhost:1111
+        
 server:
   port: 8082
 
