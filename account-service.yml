@@ -2,6 +2,13 @@ server:
   port: 8081
 
 msg: "Welcome to FinSecure Account Service"
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111       # ⭐ Admin Server ka address
+  application:
+    name: account-service
 
 # Common Eureka config (ab har service mein alag se nahi likhna!)
 eureka:
