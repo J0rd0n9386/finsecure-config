@@ -1,0 +1,21 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  boot:
+    admin:    #admin 
+      client:
+        url: http://localhost:1111
+
+# ⭐ Actuator config - ab har service mein alag se nahi likhna!
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
