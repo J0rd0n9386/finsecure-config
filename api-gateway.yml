@@ -26,5 +26,5 @@ spring:
 management:
   endpoints:
     web:
-      exposur
+      exposure
         include: health,info,gateway,refresh
