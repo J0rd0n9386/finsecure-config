@@ -1,21 +1,7 @@
-spring:
-  boot:
-    admin:    #admin panel
-      client:
-        url: http://localhost:1111
-        
+      
 server:
   port: 8082
 
 msg: "FinSecure Transaction Service - Deposit & Withdraw"
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,refresh
